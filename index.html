@@ -338,6 +338,7 @@
 <li>to change the verison of java your maven is depending on <code>vim ~/.mavenrc</code> then add <code>JAVA_HOME=&lt;the java_home you find above&gt; -v &lt;the java verison you want your maven to depend on&gt;</code></li>
 </ul>
 <p>以前很害怕配置出bug，现在发现bug不是什么问题，问题都是有解决之道的，难在于设计一个架构，从无到有才是真的难。</p>
+<p>紧接着，又出现了一个问题。本地引用的包里面，依赖于log4j的包，却找不到。然后夫君出现了，给我的<code>/etc//resolv.conf</code> 添加了一个dns解析<code>namesolver 8.8.8.8</code>，然后就好使啦。因为，浏览器带了dns解析，但是命令行是不带的，得自己指定。</p>
 
           
         
