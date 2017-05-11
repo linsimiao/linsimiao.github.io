@@ -249,6 +249,133 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/11/更改maven的java版本/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="linxx">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://ohp6j8eoc.bkt.clouddn.com/warmday.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="linxx's blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="linxx's blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/05/11/更改maven的java版本/" itemprop="url">
+                  更改maven的java版本
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-11T13:56:29+08:00">
+                2017-05-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> 今天，我在下载公司的一个小组件，需要给他打包时候，发现了这么一个错误。<br> <img src="http://ohp6j8eoc.bkt.clouddn.com/2017-05-11%2013-59-56%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" alt="maven的java版本不对"></p>
+<p> 于是，查了查，发现是maven的java版本太老了。借鉴了以下2篇博客。<br> <a href="https://my.oschina.net/gongzili/blog/350236" target="_blank" rel="external">更改maven的java版本</a>和<a href="https://askubuntu.com/questions/459900/how-to-find-my-current-java-home-in-ubuntu" target="_blank" rel="external">查看JAVA_HOME</a>.</p>
+<p> 总结一下，学了几个命令。</p>
+<ul>
+<li>check your JAVA_HOME <code>echo $JAVA_HOME</code></li>
+<li>pack your project to local <code>mvn package</code></li>
+<li>pack your project to local and skip tests <code>mvn package -DskipTests=true</code></li>
+<li>to check the java version your maven is depending on <code>mvn -v</code></li>
+<li>to change the verison of java your maven is depending on <code>vim ~/.mavenrc</code> then add <code>JAVA_HOME=&lt;the java_home you find above&gt; -v &lt;the java verison you want your maven to depend on&gt;</code></li>
+</ul>
+<p>以前很害怕配置出bug，现在发现bug不是什么问题，问题都是有解决之道的，难在于设计一个架构，从无到有才是真的难。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/11/互联网创业如何建立护城河/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1465,142 +1592,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/11/李达三楼/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="linxx">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="http://ohp6j8eoc.bkt.clouddn.com/warmday.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="linxx's blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="linxx's blog" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/11/李达三楼/" itemprop="url">
-                  李达三楼
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-11T14:17:36+08:00">
-                2017-03-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="陆院长"><a href="#陆院长" class="headerlink" title="陆院长"></a>陆院长</h3><blockquote>
-<p>   外面不贴砖，内在美更重要，专心于对真理的追求。</p>
-<p>   纪录片 必考题</p>
-<p>   报告厅的椅子 蓝色 浅黄色 图腾 </p>
-<p>   有touch，来申请。</p>
-</blockquote>
-<ul>
-<li><p>为什么要考管理学院，你对自己终生目标的设定与复旦match。换更好的身份？让父母自豪？</p>
-</li>
-<li><p>学硕还是专硕。学了专硕再读博士，或者读了博士再去工作，路就不好走。年轻的时候没想好，以后的路就走不太远。</p>
-</li>
-<li><p>18岁没有真正长大，对家庭对自己对社会没有责任，依附于学校和父母。成人了吗？22岁要成人。</p>
-</li>
-</ul>
-<h3 id="项目主任-caven"><a href="#项目主任-caven" class="headerlink" title="项目主任 caven"></a>项目主任 caven</h3><blockquote>
-<p>   模拟投资大赛<br>   交易员专才培训<br>   金融家俱乐部<br>   全英文面试 数学三笔试  对案例的分析 表现出对管理和经济的热爱</p>
-</blockquote>
-<h3 id="沈纯惠-职业发展"><a href="#沈纯惠-职业发展" class="headerlink" title="沈纯惠 职业发展"></a>沈纯惠 职业发展</h3><blockquote>
-<p>   选择 life is nothing but choices.</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1646,7 +1637,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
