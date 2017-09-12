@@ -103,7 +103,7 @@ check your JAVA_HOME echo $JAVA_HOME
 pack your project to local mvn package
 pack">
 <meta property="og:image" content="http://ohp6j8eoc.bkt.clouddn.com/2017-05-11%2013-59-56%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">
-<meta property="og:updated_time" content="2017-05-11T07:08:49.000Z">
+<meta property="og:updated_time" content="2017-09-12T06:23:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="更改maven的java版本">
 <meta name="twitter:description" content="今天，我在下载公司的一个小组件，需要给他打包时候，发现了这么一个错误。 
@@ -316,6 +316,24 @@ pack">
           </span>
 
           
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/我想学/" itemprop="url" rel="index">
+                    <span itemprop="name">我想学</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -353,6 +371,7 @@ pack">
 </ul>
 <p>以前很害怕配置出bug，现在发现bug不是什么问题，问题都是有解决之道的，难在于设计一个架构，从无到有才是真的难。</p>
 <p>紧接着，又出现了一个问题。本地引用的包里面，依赖于log4j的包，却找不到。然后夫君出现了，给我的<code>/etc//resolv.conf</code> 添加了一个dns解析<code>namesolver 8.8.8.8</code>，然后就好使啦。因为，浏览器带了dns解析，但是命令行是不带的，得自己指定。</p>
+<p>下班之前，又出现一个问题。&gt;.&lt; 想把protobuf序列化了从client端通过grpc传给server端，然后server端再将其反序列化。结果发现，一个<code>byte[]</code>被转成<code>string</code>之后再转成<code>byte[]</code>，后来的<code>byte[]</code>和之前的<code>byte[]</code>不是同一个东西。最后用了google自己定义的一个叫bytestring的东西，它的主要特色是不会变。</p>
 
       
     </div>
@@ -388,6 +407,10 @@ pack">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/12/git-mvn/" rel="prev" title="git&&mvn">
+                git&&mvn <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -446,7 +469,7 @@ pack">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">25</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -454,7 +477,7 @@ pack">
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
