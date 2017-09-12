@@ -345,7 +345,13 @@
       
         
           
-            
+            <h3 id="写个标题以防下面全灰了"><a href="#写个标题以防下面全灰了" class="headerlink" title="写个标题以防下面全灰了"></a>写个标题以防下面全灰了</h3><ul>
+<li>maven的项目推荐最外层的文件不要有代码，parent的pom.xml里面加入<code>&lt;packaging&gt;pom&lt;packaging&gt;</code>。</li>
+<li>如果依赖的包用了nexus进行版本控制的话，在<code>maven clean package</code>中间加入<code>-Pnexus</code>。</li>
+<li>如果要忽略测试的话，加入<code>-DskipTests=true</code>，如果连测试的编译都想忽略的话，那么就换成<code>-Dmaven.test.skip=true</code></li>
+<li>当项目没有如预期一样load下载好的package时，右键点击<code>project</code>，<code>maven</code>，<code>reimport</code>，就可以了。原因是代码环境发生了变化，但是机器脑子反应不过来。</li>
+</ul>
+
           
         
       
@@ -1799,13 +1805,6 @@
             </div>
           
 
-          
-            <div class="site-state-item site-state-tags">
-              
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">tags</span>
-              
-            </div>
           
 
         </nav>
